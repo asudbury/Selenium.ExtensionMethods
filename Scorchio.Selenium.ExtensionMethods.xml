@@ -4,12 +4,12 @@
         <name>Scorchio.Selenium.ExtensionMethods</name>
     </assembly>
     <members>
-        <member name="T:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods">
+        <member name="T:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions">
             <summary>
             WebDriver Extension Methods.
             </summary>
         </member>
-        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.HasElement(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.HasElement(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
             <summary>
             Determines whether the specified by has element.
             </summary>
@@ -19,26 +19,26 @@
               <c>true</c> if the specified by has element; otherwise, <c>false</c>.
             </returns>
         </member>
-        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.GetBodyText(OpenQA.Selenium.IWebDriver)">
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetBodyText(OpenQA.Selenium.IWebDriver)">
             <summary>
             Gets the body text.
             </summary>
             <param name="this">The this.</param>
             <returns></returns>
         </member>
-        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.GetAllWebElements(OpenQA.Selenium.IWebDriver)">
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetAllWebElements(OpenQA.Selenium.IWebDriver)">
             <summary>
             Gets all web elements.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.GetAllInputElements(OpenQA.Selenium.IWebDriver)">
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetAllInputElements(OpenQA.Selenium.IWebDriver)">
             <summary>
             Gets all input elements.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.ElementIsPresent(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.ElementIsPresent(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
             <summary>
             Elements the is present.
             </summary>
@@ -46,7 +46,7 @@
             <param name="by">The by.</param>
             <returns></returns>
         </member>
-        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.WaitUntilElementIsPresent(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.Int32)">
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.WaitUntilElementIsPresent(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.Int32)">
             <summary>
             Waits the until element is present.
             </summary>
@@ -54,6 +54,51 @@
             <param name="by">The by.</param>
             <param name="timeout">The timeout.</param>
             <returns></returns>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.ClickButton(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            Clicks the button.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="buttonId">The button identifier.</param>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.ClickLink(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            Clicks the link.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="linkText">The link text.</param>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.IsChecked(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
+            <summary>
+            Determines whether the specified by is checked.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="by">The by.</param>
+            <returns>
+              <c>true</c> if the specified by is checked; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Scorchio.Selenium.ExtensionMethods.WebElementExtensions">
+            <summary>
+            WebElement Extensions.
+            </summary>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebElementExtensions.EnterText(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            Enters the text.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="text">The text.</param>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebElementExtensions.IsDisplayed(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Determines whether this instance is displayed.
+            </summary>
+            <param name="this">The this.</param>
+            <returns>
+              <c>true</c> if the specified this is displayed; otherwise, <c>false</c>.
+            </returns>
         </member>
     </members>
 </doc>
