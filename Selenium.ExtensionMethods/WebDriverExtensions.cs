@@ -8,7 +8,7 @@
     /// <summary>
     /// WebDriver Extension Methods.
     /// </summary>
-    public static class WebDriverExtensionMethods
+    public static class WebDriverExtensions
     {
         /// <summary>
         /// Determines whether the specified by has element.
@@ -96,6 +96,45 @@
         {
             WebDriverWait wait = new WebDriverWait(@this, TimeSpan.FromSeconds(timeout));
             return wait.Until(d => d.ElementIsPresent(by));
+        }
+
+        /// <summary>
+        /// Clicks the button.
+        /// </summary>
+        /// <param name="this">The this.</param>
+        /// <param name="buttonId">The button identifier.</param>
+        public static void ClickButton(
+            this IWebDriver @this, 
+            string buttonId)
+        {
+            @this.FindElement(By.Id(buttonId)).Click();
+        }
+
+        /// <summary>
+        /// Clicks the link.
+        /// </summary>
+        /// <param name="this">The this.</param>
+        /// <param name="linkText">The link text.</param>
+        public static void ClickLink(
+            this IWebDriver @this, 
+            string linkText)
+        {
+            @this.FindElement(By.LinkText(linkText)).Click();
+        }
+
+        /// <summary>
+        /// Determines whether the specified by is checked.
+        /// </summary>
+        /// <param name="this">The this.</param>
+        /// <param name="by">The by.</param>
+        /// <returns>
+        ///   <c>true</c> if the specified by is checked; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool IsChecked(
+            this IWebDriver @this, 
+            By by)
+        {
+            return @this.FindElement(by).Selected;
         }
     }
 }
