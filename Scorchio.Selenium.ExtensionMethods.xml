@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Scorchio.Selenium.ExtensionMethods</name>
+    </assembly>
+    <members>
+        <member name="T:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods">
+            <summary>
+            WebDriver Extension Methods.
+            </summary>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.HasElement(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
+            <summary>
+            Determines whether the specified by has element.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="by">The by.</param>
+            <returns>
+              <c>true</c> if the specified by has element; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.GetBodyText(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Gets the body text.
+            </summary>
+            <param name="this">The this.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.GetAllWebElements(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Gets all web elements.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.GetAllInputElements(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Gets all input elements.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.ElementIsPresent(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
+            <summary>
+            Elements the is present.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="by">The by.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensionMethods.WaitUntilElementIsPresent(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.Int32)">
+            <summary>
+            Waits the until element is present.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="by">The by.</param>
+            <param name="timeout">The timeout.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
