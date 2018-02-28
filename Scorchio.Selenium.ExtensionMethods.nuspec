@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Scorchio.Selenium.ExtensionMethods</id>
+        <version>1.0.0</version>
+        <title>Scorchio Selenium Extension Methods</title>
+        <authors>Adrian Sudbury</authors>
+        <owners>Scorchio Limited</owners>
+        <projectUrl>https://github.com/asudbury/Selenium.ExtensionMethods</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Selenium Extension Methods for C#.</description>
+        <language>en-GB</language>
+    </metadata>
+    <files>
+        <file src="Selenium.ExtensionMethods\bin\Debug\Scorchio.Selenium.ExtensionMethods.dll" target="lib\Scorchio.Selenium.ExtensionMethods.dll" />
+    </files>
+</package>
