@@ -1,9 +1,10 @@
 ﻿namespace Scorchio.Selenium.ExtensionMethods
 {
-    using System;
-    using System.Collections.ObjectModel;
     using OpenQA.Selenium;
     using OpenQA.Selenium.Support.UI;
+    using System;
+    using System.Collections.ObjectModel;
+    using System.IO;
 
     /// <summary>
     /// WebDriver Extension Methods.
@@ -45,19 +46,34 @@
         }
 
         /// <summary>
-        /// Gets all web elements.
+        /// Gets all elements.
         /// </summary>
         /// <returns></returns>
-        public static ReadOnlyCollection<IWebElement> GetAllWebElements(this IWebDriver @this)
+        public static ReadOnlyCollection<IWebElement> GetAllElements(this IWebDriver @this)
         {
             return @this.FindElements(By.CssSelector("*"));
+        }
+
+        /// <summary>
+        /// Gets the elements.
+        /// </summary>
+        /// <param name="this">The this.</param>
+        /// <param name="by">The by.</param>
+        /// <returns></returns>
+        public static ReadOnlyCollection<IWebElement> GetElements(
+            this IWebDriver @this,
+            By by)
+        {
+            return @this.FindElements(by);
         }
 
         /// <summary>
         /// Gets all input elements.
         /// </summary>
         /// <returns></returns>
-        public static ReadOnlyCollection<IWebElement> GetAllInputElements(this IWebDriver @this)
+        public static ReadOnlyCollection<IWebElement> GetAllInputElements(
+            this IWebDriver @this,
+            By by)
         {
             return @this.FindElements(By.TagName("input"));
         }
@@ -134,7 +150,55 @@
             this IWebDriver @this, 
             By by)
         {
-            return @this.FindElement(by).Selected;
+            try
+            {
+                return @this.FindElement(by).Selected;
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Saves the screen shot.
+        /// </summary>
+        /// <param name="this">The this.</param>
+        /// <param name="filePath">The file path.</param>
+        /// <returns></returns>
+        public static bool SaveScreenShot(
+            this IWebDriver @this,
+            string filePath)
+        {
+            try
+            {
+                Screenshot screenShot = ((ITakesScreenshot)@this).GetScreenshot();
+
+                string directory = Path.GetDirectoryName(filePath);
+
+                if (directory != null)
+                {
+                    if (Directory.Exists(directory) == false)
+                    {
+                        Directory.CreateDirectory(directory);
+                    }
+                }
+
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                }
+
+                screenShot.SaveAsFile(filePath, ScreenshotImageFormat.Png);
+
+                return true;
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+                return false;
+            }
         }
     }
 }
+

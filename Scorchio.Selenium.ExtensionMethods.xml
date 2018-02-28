@@ -26,13 +26,21 @@
             <param name="this">The this.</param>
             <returns></returns>
         </member>
-        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetAllWebElements(OpenQA.Selenium.IWebDriver)">
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetAllElements(OpenQA.Selenium.IWebDriver)">
             <summary>
-            Gets all web elements.
+            Gets all elements.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetAllInputElements(OpenQA.Selenium.IWebDriver)">
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetElements(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
+            <summary>
+            Gets the elements.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="by">The by.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetAllInputElements(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)">
             <summary>
             Gets all input elements.
             </summary>
@@ -79,17 +87,64 @@
               <c>true</c> if the specified by is checked; otherwise, <c>false</c>.
             </returns>
         </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.SaveScreenShot(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            Saves the screen shot.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="filePath">The file path.</param>
+            <returns></returns>
+        </member>
         <member name="T:Scorchio.Selenium.ExtensionMethods.WebElementExtensions">
             <summary>
             WebElement Extensions.
             </summary>
         </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebElementExtensions.GetValue(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the value.
+            </summary>
+            <param name="this">The this.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebElementExtensions.GetCssClass(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the CSS class.
+            </summary>
+            <param name="this">The this.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebElementExtensions.GetText(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the text.
+            </summary>
+            <param name="this">The this.</param>
+            <returns></returns>
+        </member>
         <member name="M:Scorchio.Selenium.ExtensionMethods.WebElementExtensions.EnterText(OpenQA.Selenium.IWebElement,System.String)">
             <summary>
-            Enters the text.
+            Enters the text, clearing any content first.
             </summary>
             <param name="this">The this.</param>
             <param name="text">The text.</param>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebElementExtensions.PressEnter(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Press the enter key.
+            </summary>
+            <param name="this">The this.</param>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebElementExtensions.Clear(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Clears the field.
+            </summary>
+            <param name="this">The this.</param>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebElementExtensions.SetInputFocus(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Sets the focus to the input field.
+            </summary>
+            <param name="this">The this.</param>
         </member>
         <member name="M:Scorchio.Selenium.ExtensionMethods.WebElementExtensions.IsDisplayed(OpenQA.Selenium.IWebElement)">
             <summary>
