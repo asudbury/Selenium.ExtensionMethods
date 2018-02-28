@@ -1,7 +1,6 @@
 ﻿namespace Scorchio.Selenium.ExtensionMethods
 {
     using OpenQA.Selenium;
-    using OpenQA.Selenium.Interactions;
     using System;
 
     /// <summary>
@@ -68,8 +67,8 @@
         /// <param name="this">The this.</param>
         public static void Clear(this IWebElement @this)
         {
-            if (@this.TagName == "input" || 
-                @this.TagName == "textarea")
+            if (@this.TagName == Constants.Input || 
+                @this.TagName == Constants.TextArea)
             {
                 @this.Clear();
             }
@@ -86,7 +85,7 @@
         /// <param name="this">The this.</param>
         public static void SetInputFocus(this IWebElement @this)
         {
-            if (@this.TagName == "input")
+            if (@this.TagName == Constants.Input)
             {
                 @this.SendKeys(string.Empty);
             }

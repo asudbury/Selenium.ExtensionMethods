@@ -75,7 +75,7 @@
             this IWebDriver @this,
             By by)
         {
-            return @this.FindElements(By.TagName("input"));
+            return @this.FindElements(By.TagName(Constants.Input));
         }
 
         /// <summary>
