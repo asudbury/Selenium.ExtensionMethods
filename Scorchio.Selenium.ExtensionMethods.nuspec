@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Scorchio.Selenium.ExtensionMethods</id>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <title>Scorchio Selenium Extension Methods</title>
         <authors>Adrian Sudbury</authors>
         <owners>Scorchio Limited</owners>

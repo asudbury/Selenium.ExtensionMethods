@@ -8,10 +8,14 @@
   - [GetAllElements()](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetAllElements-OpenQA-Selenium-IWebDriver- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetAllElements(OpenQA.Selenium.IWebDriver)')
   - [GetAllInputElements()](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetAllInputElements-OpenQA-Selenium-IWebDriver,OpenQA-Selenium-By- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetAllInputElements(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)')
   - [GetBodyText(this)](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetBodyText-OpenQA-Selenium-IWebDriver- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetBodyText(OpenQA.Selenium.IWebDriver)')
+  - [GetDropDownValue(this,id)](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetDropDownValue-OpenQA-Selenium-IWebDriver,System-String- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetDropDownValue(OpenQA.Selenium.IWebDriver,System.String)')
   - [GetElements(this,by)](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetElements-OpenQA-Selenium-IWebDriver,OpenQA-Selenium-By- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetElements(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)')
+  - [GetForm(this)](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetForm-OpenQA-Selenium-IWebDriver- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetForm(OpenQA.Selenium.IWebDriver)')
   - [HasElement(this,by)](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-HasElement-OpenQA-Selenium-IWebDriver,OpenQA-Selenium-By- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.HasElement(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)')
   - [IsChecked(this,by)](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-IsChecked-OpenQA-Selenium-IWebDriver,OpenQA-Selenium-By- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.IsChecked(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By)')
   - [SaveScreenShot(this,filePath)](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-SaveScreenShot-OpenQA-Selenium-IWebDriver,System-String- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.SaveScreenShot(OpenQA.Selenium.IWebDriver,System.String)')
+  - [SetDropDownValue(this,id,value)](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-SetDropDownValue-OpenQA-Selenium-IWebDriver,System-String,System-String- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.SetDropDownValue(OpenQA.Selenium.IWebDriver,System.String,System.String)')
+  - [SubmitForm(this,formId)](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-SubmitForm-OpenQA-Selenium-IWebDriver,System-String- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.SubmitForm(OpenQA.Selenium.IWebDriver,System.String)')
   - [WaitUntilElementIsPresent(this,by,timeout)](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-WaitUntilElementIsPresent-OpenQA-Selenium-IWebDriver,OpenQA-Selenium-By,System-Int32- 'Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.WaitUntilElementIsPresent(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.Int32)')
 - [WebElementExtensions](#T-Scorchio-Selenium-ExtensionMethods-WebElementExtensions 'Scorchio.Selenium.ExtensionMethods.WebElementExtensions')
   - [Clear(this)](#M-Scorchio-Selenium-ExtensionMethods-WebElementExtensions-Clear-OpenQA-Selenium-IWebElement- 'Scorchio.Selenium.ExtensionMethods.WebElementExtensions.Clear(OpenQA.Selenium.IWebElement)')
@@ -130,6 +134,24 @@ Gets the body text.
 | ---- | ---- | ----------- |
 | this | [OpenQA.Selenium.IWebDriver](#T-OpenQA-Selenium-IWebDriver 'OpenQA.Selenium.IWebDriver') | The this. |
 
+<a name='M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetDropDownValue-OpenQA-Selenium-IWebDriver,System-String-'></a>
+### GetDropDownValue(this,id) `method` [#](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetDropDownValue-OpenQA-Selenium-IWebDriver,System-String- 'Go To Here') [=](#contents 'Back To Contents')
+
+##### Summary
+
+Gets the drop down value.
+
+##### Returns
+
+
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| this | [OpenQA.Selenium.IWebDriver](#T-OpenQA-Selenium-IWebDriver 'OpenQA.Selenium.IWebDriver') | The this. |
+| id | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The identifier. |
+
 <a name='M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetElements-OpenQA-Selenium-IWebDriver,OpenQA-Selenium-By-'></a>
 ### GetElements(this,by) `method` [#](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetElements-OpenQA-Selenium-IWebDriver,OpenQA-Selenium-By- 'Go To Here') [=](#contents 'Back To Contents')
 
@@ -147,6 +169,23 @@ Gets the elements.
 | ---- | ---- | ----------- |
 | this | [OpenQA.Selenium.IWebDriver](#T-OpenQA-Selenium-IWebDriver 'OpenQA.Selenium.IWebDriver') | The this. |
 | by | [OpenQA.Selenium.By](#T-OpenQA-Selenium-By 'OpenQA.Selenium.By') | The by. |
+
+<a name='M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetForm-OpenQA-Selenium-IWebDriver-'></a>
+### GetForm(this) `method` [#](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-GetForm-OpenQA-Selenium-IWebDriver- 'Go To Here') [=](#contents 'Back To Contents')
+
+##### Summary
+
+Gets the (first) form.
+
+##### Returns
+
+
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| this | [OpenQA.Selenium.IWebDriver](#T-OpenQA-Selenium-IWebDriver 'OpenQA.Selenium.IWebDriver') | The this. |
 
 <a name='M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-HasElement-OpenQA-Selenium-IWebDriver,OpenQA-Selenium-By-'></a>
 ### HasElement(this,by) `method` [#](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-HasElement-OpenQA-Selenium-IWebDriver,OpenQA-Selenium-By- 'Go To Here') [=](#contents 'Back To Contents')
@@ -201,6 +240,39 @@ Saves the screen shot.
 | ---- | ---- | ----------- |
 | this | [OpenQA.Selenium.IWebDriver](#T-OpenQA-Selenium-IWebDriver 'OpenQA.Selenium.IWebDriver') | The this. |
 | filePath | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The file path. |
+
+<a name='M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-SetDropDownValue-OpenQA-Selenium-IWebDriver,System-String,System-String-'></a>
+### SetDropDownValue(this,id,value) `method` [#](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-SetDropDownValue-OpenQA-Selenium-IWebDriver,System-String,System-String- 'Go To Here') [=](#contents 'Back To Contents')
+
+##### Summary
+
+Sets the drop down value.
+
+##### Returns
+
+
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| this | [OpenQA.Selenium.IWebDriver](#T-OpenQA-Selenium-IWebDriver 'OpenQA.Selenium.IWebDriver') | The this. |
+| id | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The identifier. |
+| value | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The value. |
+
+<a name='M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-SubmitForm-OpenQA-Selenium-IWebDriver,System-String-'></a>
+### SubmitForm(this,formId) `method` [#](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-SubmitForm-OpenQA-Selenium-IWebDriver,System-String- 'Go To Here') [=](#contents 'Back To Contents')
+
+##### Summary
+
+Submits the form.
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| this | [OpenQA.Selenium.IWebDriver](#T-OpenQA-Selenium-IWebDriver 'OpenQA.Selenium.IWebDriver') | The this. |
+| formId | [System.String](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String 'System.String') | The form identifier. |
 
 <a name='M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-WaitUntilElementIsPresent-OpenQA-Selenium-IWebDriver,OpenQA-Selenium-By,System-Int32-'></a>
 ### WaitUntilElementIsPresent(this,by,timeout) `method` [#](#M-Scorchio-Selenium-ExtensionMethods-WebDriverExtensions-WaitUntilElementIsPresent-OpenQA-Selenium-IWebDriver,OpenQA-Selenium-By,System-Int32- 'Go To Here') [=](#contents 'Back To Contents')

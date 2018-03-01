@@ -5,6 +5,7 @@
     using System;
     using System.Collections.ObjectModel;
     using System.IO;
+    using System.Linq;
 
     /// <summary>
     /// WebDriver Extension Methods.
@@ -198,6 +199,65 @@
                 Console.WriteLine(exception);
                 return false;
             }
+        }
+
+        /// <summary>
+        /// Gets the (first) form.
+        /// </summary>
+        /// <param name="this">The this.</param>
+        /// <returns></returns>
+        public static IWebElement GetForm(IWebDriver @this)
+        {
+            return @this.FindElements(By.TagName("form")).First();
+        }
+
+        /// <summary>
+        /// Submits the form.
+        /// </summary>
+        /// <param name="this">The this.</param>
+        /// <param name="formId">The form identifier.</param>
+        public static void SubmitForm(
+            this IWebDriver @this, 
+            string formId = null)
+        {
+            IWebElement form = formId == null ? GetForm(@this) : @this.FindElements(By.Id(formId)).First();
+            form.Submit();
+        }
+
+        /// <summary>
+        /// Gets the drop down value.
+        /// </summary>
+        /// <param name="this">The this.</param>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
+        public static string GetDropDownValue(
+            this IWebDriver @this,
+            string id)
+        {
+            IWebElement element = @this.FindElement(By.Id(id));
+
+            SelectElement dropDown = new SelectElement(element);
+
+            return dropDown.SelectedOption.Text;
+        }
+
+        /// <summary>
+        /// Sets the drop down value.
+        /// </summary>
+        /// <param name="this">The this.</param>
+        /// <param name="id">The identifier.</param>
+        /// <param name="value">The value.</param>
+        /// <returns></returns>
+        public static void SetDropDownValue(
+            this IWebDriver @this,
+            string id,
+            string value)
+        {
+            IWebElement element = @this.FindElement(By.Id(id));
+
+            SelectElement dropDown = new SelectElement(element);
+
+            dropDown.SelectByValue(value);
         }
     }
 }

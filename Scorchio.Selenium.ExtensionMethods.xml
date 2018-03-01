@@ -95,6 +95,37 @@
             <param name="filePath">The file path.</param>
             <returns></returns>
         </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetForm(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Gets the (first) form.
+            </summary>
+            <param name="this">The this.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.SubmitForm(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            Submits the form.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="formId">The form identifier.</param>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.GetDropDownValue(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            Gets the drop down value.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Selenium.ExtensionMethods.WebDriverExtensions.SetDropDownValue(OpenQA.Selenium.IWebDriver,System.String,System.String)">
+            <summary>
+            Sets the drop down value.
+            </summary>
+            <param name="this">The this.</param>
+            <param name="id">The identifier.</param>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
         <member name="T:Scorchio.Selenium.ExtensionMethods.WebElementExtensions">
             <summary>
             WebElement Extensions.
