@@ -12,7 +12,7 @@
 
 [AppVeyor Build Status](https://ci.appveyor.com/project/asudbury/Selenium.ExtensionMethods)
 
-[![nuget](https://img.shields.io/nuget/v/Scorchio.Selenium.ExtensionMethods.svg)](https://www.nuget.org/packages/Scorchio.Selenium.ExtensionMethods/)
+[![nuget](https://img.shields.io/nuget/v/Scorchio.Selenium-ExtensionMethods.svg)](https://www.nuget.org/packages/Scorchio.Selenium-ExtensionMethods/)
 
 [Nuget Package](https://www.nuget.org/packages/Scorchio.Selenium.ExtensionMethods/)
 
