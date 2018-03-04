@@ -6,13 +6,13 @@
 
 [Team City Build Status](http://vm-scorchio.westeurope.cloudapp.azure.com:888/viewType.html?buildTypeId=SeleniumExtensionMethods_Build&guest=1)
 
-<a href="https://ci.appveyor.com/project/asudbury/Selenium.ExtensionMethods">
+<a href="https://ci.appveyor.com/project/asudbury/Selenium-ExtensionMethods">
 	<img src='https://ci.appveyor.com/api/projects/status/5sg65tmn42gmyh1e?svg=true'/>
 </a>
 
-[AppVeyor Build Status](https://ci.appveyor.com/project/asudbury/Selenium.ExtensionMethods)
+[AppVeyor Build Status](https://ci.appveyor.com/project/asudbury/Selenium-ExtensionMethods)
 
-[![nuget](https://img.shields.io/nuget/v/Scorchio.Selenium-ExtensionMethods.svg)](https://www.nuget.org/packages/Scorchio.Selenium-ExtensionMethods/)
+[![nuget](https://img.shields.io/nuget/v/Scorchio.Selenium.ExtensionMethods.svg)](https://www.nuget.org/packages/Scorchio.Selenium.ExtensionMethods/)
 
 [Nuget Package](https://www.nuget.org/packages/Scorchio.Selenium.ExtensionMethods/)
 
