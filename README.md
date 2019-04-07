@@ -15,9 +15,8 @@
     </tr>
     <tr>
         <td align="center"><a href="https://www.nuget.org/packages/Scorchio.Selenium.ExtensionMethods">Nuget Package</a></td>
-        <td align="center"><a href="https://www.nuget.org/packages/Scorchio.Selenium.ExtensionMethods"><img src="https://img.shields.io/nuget/v/Scorchio.Selenium.ExtensionMethods.svg"></img></a></td>
+        <td align="center"><a href="https://www.nuget.org/packages/Scorchio.Selenium.ExtensionMethods"><img src='https://buildstats.info/nuget/Scorchio.Selenium.ExtensionMethods'/></a></td>
 </table>
 
 
 [Application Programming Interface](Scorchio.Selenium.ExtensionMethods.md)
-
